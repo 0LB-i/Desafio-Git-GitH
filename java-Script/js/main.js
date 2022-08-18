@@ -77,6 +77,25 @@ function clicar(){
 }
 
 function redirecionar(){
-    
+    //window.open("https://www.youtube.com/watch?v=LMXDL04v-_8"); //Abre outra janela
+    window.location.href = "https://www.youtube.com/watch?v=LMXDL04v-_8"; //Abre na mesma janela
 }
 
+function trocar(elemento){
+    //document.getElementById("mausemove").innerHTML = "Obrigado por passar o mause";
+    elemento.innerHTML = "Obrigado por passar o mause";
+    //alert("Trocar texto");
+}
+
+function voltar(elemento){
+    //document.getElementById("mausemove").innerHTML = "Passe o mause aqui";
+    elemento.innerHTML = "Passe o mause aqui"
+}
+
+function load(){
+    alert("Página carregada.");
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value);
+}
