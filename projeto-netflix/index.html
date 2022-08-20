@@ -21,9 +21,9 @@
             <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentário</a>
+                <a href="#series-populares">Séries</a>
+                <a href="#filmes-populares">Filmes</a>
+                <a href="#documentarios-populares">Documentário</a>
             </nav>
         </div>
     </header>
@@ -38,8 +38,12 @@
                         ASSISTIR AGORA
                     </button>
                     <button role="button" class="botao">
-                        <i class="fa-solid fa-info"></i>
-                        MAIS INFORMAÇÕES
+                        <a href="https://www.themoviedb.org/movie/639933-the-northman?language=pt-BR" target="_blank">
+                            <i class="fa-solid fa-info">
+                            </i>MAIS INFORMAÇÕES
+                        </a>
+                        
+                        
                     </button>
                 </div>
             </div>
@@ -49,7 +53,7 @@
 
     <div class="carrosel-serie">
         <div class="container">
-            <h3 class="titulo">SÉRIES POPULARES</h3>
+            <h3 class="titulo" id="series-populares">SÉRIES POPULARES</h3>
         </div>
         <div class="owl-carousel owl-theme">
             <div class="item">
@@ -87,7 +91,7 @@
 
     <div class="carrosel-serie">
         <div class="container">
-            <h3 class="titulo">FILMES POPULARES</h3>
+            <h3 class="titulo" id="filmes-populares">FILMES POPULARES</h3>
         </div>
         <div class="owl-carousel owl-theme">
             <div class="item">
@@ -121,9 +125,46 @@
                 <img class="box-serie" src="img/fm10.jpg" alt="" srcset="">
             </div>
         </div>
-
     </div>
-    
+
+    <div class="carrosel-serie">
+        <div class="container">
+            <h3 class="titulo" id="documentarios-populares">DOCUMENTÁRIOS POPULARES</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-serie" src="img/doc1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-serie" src="img/doc10.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/34d592e49b.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>

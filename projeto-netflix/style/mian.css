@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 :root{
     --vermelho: #E50914;
@@ -17,6 +20,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+
+
 
 header .container{
     display: flex;
@@ -46,7 +51,7 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/projeto-netflix/img/homemdonorte.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Desafio-Git-GitH/projeto-netflix/img/homemdonorte.jpg');
 
     height: 500px;
     background-size: cover;   
@@ -84,9 +89,11 @@ header nav a:hover{
     transition: .3s;
 }
 
+
 .botao:hover{
     background-color: white;
     color: black;
+    transform: scale(1.02);
 }
 
 .botao i{
@@ -110,10 +117,29 @@ header nav a:hover{
 
 .carrosel-serie{
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .carrosel-serie .titulo{
     margin-bottom: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+
+.item:hover img{
+    transition: .4s;
+    transform: scale(1.1); 
+}
+
+/*boton link*/
+a{
+    color: white;
+}
+.botao a{
+    text-decoration: none;
+}
+.botao:hover a{
+    transition: 0.3s;
+    color: black;
 }
