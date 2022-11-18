@@ -7,17 +7,31 @@
 class Carro {
     marca;
     cor;
-    cunsumoMedioPorKm;
+    consumoMedioPorKm;
 
-    constructor(marca, cor, cunsumoMedioPorKm){
+    constructor(marca, cor, consumoMedioPorKm){
         this.marca = marca;
         this.cor = cor;
-        this.cunsumoMedioPorKm = cunsumoMedioPorKm;
+        this.consumoMedioPorKm = consumoMedioPorKm;
+    }
+
+    clacularGastoViagem(distanciaKm, precoCombustivel){
+        return precoCombustivel * (distanciaKm * this.consumoMedioPorKm);
     }
 } 
 
+
+
 const uno = new Carro('Fiat', 'Preto', 1/13.5);
 
+console.log(uno);
 
+console.log(uno.clacularGastoViagem(70, 6.8));
+
+const palio = new Carro('Fiat', 'Vermelho', 1/11);
+
+console.log(palio);
+
+console.log(palio.clacularGastoViagem(80, 6.8));
 
 
